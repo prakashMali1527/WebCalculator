@@ -1,0 +1,80 @@
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#calculator {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 35%;
+    height: 50%;
+    min-width: 420px;
+    min-height: 370px;
+    background-color: rgb(230, 217, 217);
+    border-radius: 0.5%;
+    padding: .8rem .6rem .6rem .6rem;
+}
+
+
+
+h1 {
+    /* letter-spacing: .1rem; */
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    padding: 5px;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    background-color: black;
+}
+
+#display {
+    font-size: 2rem;
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background-color: lightyellow;
+    margin-bottom: .6rem;
+}
+
+#display span {
+    position: absolute;
+    bottom: .5rem;
+    right: .5rem;
+}
+
+.button {
+    font-weight: 600;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+    text-align: center;
+    padding: .6rem;
+    background-color: white;
+    width: 24.7%;
+    height: 40px;
+    margin-bottom: .1rem;
+    transition: all 0.5s;
+}
+
+.button[data-value="0"] {
+    width: 49.8%;
+}
+
+.button:hover:not(.arithmetic-operator) {
+    background-color: rgb(176, 239, 52);
+}
+
+/* arithmetic-operator color */
+.arithmetic-operator {
+    background-color: lightcoral;
+    color: white;
+}
+
+.arithmetic-operator:hover {
+    background-color: brown;
+}
